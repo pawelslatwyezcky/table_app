@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 23px 78px;
+}
+
+.app__container {
+  max-width: 947px;
+  margin: 0 auto;
+}
+
+/* Search Component */
+
+.search {
+  width: 631px;
+  height: 52px;
+  padding: 0px 26px;
+  margin-bottom: 15px;
+  background: #5a5c66;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search__input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #b2b7bf;
+  background-color: transparent;
+  border: none;
+}
+
+.search__input,
+.search__input:focus,
+.search__input:active {
+  outline: none;
+}
+
+.search__input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #b2b7bf;
+}
+
+.search__input:focus::placeholder {
+  color: transparent;
+}
+
+/* Table Component */
+
+.table {
+  border-collapse: collapse;
+}
+
+.table__heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #b2b7bf;
+  background-color: #474955;
+  border: none;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+
+.table__heading-id {
+  width: 110px;
+}
+.table__heading-id img {
+  margin-left: 39px;
+}
+
+.table__heading .reversed {
+  transform: rotate(180deg);
+}
+
+.table__heading-heading {
+  width: 529px;
+}
+
+.table__heading-heading img {
+  margin-left: 39px;
+}
+
+.table__heading-description {
+  width: 432px;
+}
+
+.table__heading-description img {
+  margin-left: 25px;
+}
+
+.table__data {
+  vertical-align: middle;
+  border: #e3e6ec 1px solid;
+  padding: 15px 12px 14px 11px;
+  min-height: 56px;
+}
+
+.table__data-id {
+  text-align: center;
+}
+
+/* Pagination Component */
+
+.pagination {
+  max-width: 947px;
+  padding: 16px 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #474955;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination__button:disabled {
+  opacity: 70%;
+  cursor: not-allowed;
+}
+
+.page__button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  color: #474955;
+  text-decoration: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.page__button.page__active {
+  color: #7ebc3c;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 20px;
+  }
+
+  .app__container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    width: 100%;
+  }
+
+  .table {
+    width: 100%;
+  }
+
+  .table__heading {
+    font-size: 12px;
+  }
+
+  .table__heading img {
+    margin-left: 5px;
+  }
+
+  .table__data {
+    font-size: 12px;
+  }
+
+  .pagination {
+    padding: 5px;
+  }
+
+  .pagination__button {
+    font-size: 16px;
+  }
+
+  .page__button {
+    font-size: 14px;
+  }
+}
